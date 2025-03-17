@@ -2,14 +2,14 @@ package com.agnes;
 
 public class Array {
     public static void main(String[] args) {
-        String [] myArray = new String[6];
+        String[] myArray = new String[6];
         myArray[0] = "Agi";
         myArray[1] = "nes";
         myArray[2] = "naz";
         myArray[3] = "mbo";
         myArray[4] = "che";
         myArray[5] = "zie";
-        for ( int i = 0; i < 6; i++)
+        for (int i = 0; i < 6; i++)
             System.out.println(myArray[i]);
         System.out.println("=============================");
 
@@ -24,26 +24,31 @@ public class Array {
             System.out.println(myArrays[i]);
         System.out.println("=============================");
 
-        int [] numbers = { 70, 90, 50, 110, 400, 300, 900};
-         int max = numbers[0];
-         int min = numbers[0];
-         for (int number : numbers) {
-             // calculate the max number
-             if (number > max) {
-                 max= number;
-             }
-             //calculate the min number
-             if (number < min) {
-                 min = number;
-             }
-                 // calculate average
-                 int sum = 0;
-             sum += number;
-             double average = (double) sum / numbers.length;
+        int[] numbers = {70, 90, 50, 110, 400, 300, 900};
+        int max = numbers[0];
+        int min = numbers[0];
+        for (int number : numbers) {
+            // calculate the max number
+            if (number > max) {
+                max = number;
+            }
+            //calculate the min number
+            if (number < min) {
+                min = number;
+            }
+            // calculate average
+            int sum = 0;
+            sum += number;
+            double average = (double) sum / numbers.length;
 
-             System.out.println(max);
-             System.out.println(min);
-             System.out.println(average);
-         }
+            System.out.println(max);
+            System.out.println(min);
+            System.out.println(average);
+            // reverse  and print array
+            System.out.println("Arrays in reverse order: ");
+            for (int i = numbers.length - 1; i >= 0; i--)
+                System.out.println(numbers[i]);
+        }
+
     }
 }
