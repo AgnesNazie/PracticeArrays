@@ -41,6 +41,22 @@ public class Array {
             sum += number;
             double average = (double) sum / numbers.length;
 
+            // to check if a particular  exist in the array
+            int[] number0 = {70, 90, 50, 110, 400, 300, 900};
+            int target = 400;
+            boolean found = false;
+            for (int number1 : number0) {
+                if ( number1 == target) {
+                    found = true;
+                    break;
+                }
+            }
+            if (found) {
+                System.out.println( target + " is in the array");
+            } else{
+                System.out.println(target + " is not in the array");
+            }
+
             System.out.println(max);
             System.out.println(min);
             System.out.println(average);
